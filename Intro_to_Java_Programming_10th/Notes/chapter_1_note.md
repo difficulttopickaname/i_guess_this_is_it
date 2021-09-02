@@ -1,7 +1,7 @@
 # Notes for Chapter 1  
 
-### 1.8 
-#### Error 01
+## 1.8 
+### Error 01
 When I'm attempting to realize **figure 1.9**, the following error occurs:
 ![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c1_8_error_package_1.png)
 
@@ -20,7 +20,7 @@ public class java_1_32 {
 ```
 obviously, java failed to find the package 'world_001' in the first line of the source code.
 
-#### Solution 01
+### Solution 01
 I simply go back to the parent directory, and the program runs smoothly.
 ![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c1_8_error_package%20_2%20.png)
 
