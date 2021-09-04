@@ -23,7 +23,9 @@ obviously, java failed to find the package 'world_001' in the first line of the 
 ### Solution 01
 I simply go back to the parent directory, and the program runs smoothly.
 ![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c1_8_error_package%20_2%20.png)
-
+  
+  
+  
 ## 1.10
 ### Note 1.10.N1
 ```java
