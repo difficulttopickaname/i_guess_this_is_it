@@ -4,20 +4,23 @@
 ### Taking an Input
 JAVA DOESN'T DIRECTLY SUPPORT CONSOLE INPUT. So, in order to type input directly, the **Scanner** class is needed to create an object to read input from *System.in*.  
   
-First of all, "Scanner" is in the *java.util* package. Import it before using.
+First of all, "Scanner" is in the *java.util* package. Import it before using.  
 ``
 import java.util.Scanner;
-``
-Create a Scanner type object and assigns it to the variable 'input'.
+``  
+  
+Create a Scanner type object and assigns it to the variable 'input'.  
 ``
 Scanner input = new Scanner(System.in);
 ``
+  
 To read a "double" type value, the "nextDouble()" method is needed.
 ``
 double a = input.nextDouble();
 ``
   
-The entire program is shown below:
+The entire program is shown below:  
+
 ``
 package chapter_2_learning;
 
