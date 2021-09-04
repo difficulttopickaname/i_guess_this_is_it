@@ -24,15 +24,15 @@ The entire program is shown below:
 ```java
 package chapter_2_learning;
 
-import java.util.Scanner; \\importing the Scanner class
-\\or use "import java.util.*;" as a wildcard import.
+import java.util.Scanner; //importing the Scanner class
+//or use "import java.util.*;" as a wildcard import.
 
 public class listing_2_2 {
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in); \\defining "input" for further use
+		Scanner input = new Scanner(System.in); //defining "input" for further use
 		
-		System.out.println("Type in the radius:"); \\prompt
-		double radius=input.nextDouble(); \\reading a double type value as the input
+		System.out.println("Type in the radius:"); //prompt
+		double radius=input.nextDouble(); //reading a double type value as the input
 		
 		double area = radius*radius*3.14159;
 		
