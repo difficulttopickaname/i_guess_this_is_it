@@ -1,7 +1,7 @@
 # Notes for Chapter 2  
   
 ## 2.1  
-### Taking an Input
+### Note 2.1.N1 Taking an Input
 JAVA DOESN'T DIRECTLY SUPPORT CONSOLE INPUT. So, in order to type input directly, the **Scanner** class is needed to create an object to read input from *System.in*.  
   
 First of all, "Scanner" is in the *java.util* package. Import it before using.  
