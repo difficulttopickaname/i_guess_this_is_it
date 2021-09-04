@@ -8,7 +8,7 @@ When I'm attempting to realize **figure 1.9**, the following error occurs:
 The second to the last line indicates that the computer "Could not find or load main class".
 
 According to my [source program](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Source_code/java_1_32.java), 
-```
+```java
 package world_001;
 
 public class java_1_32 {
@@ -26,7 +26,7 @@ I simply go back to the parent directory, and the program runs smoothly.
 
 ## 1.10
 ### Note 1.10.N1
-```
+```java
 public class LogicError {
 	public static void main(String[] args) {
 		System.out.println(9/5);
