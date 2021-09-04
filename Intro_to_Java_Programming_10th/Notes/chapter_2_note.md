@@ -21,7 +21,7 @@ double a = input.nextDouble();
   
 The entire program is shown below:  
 
-```
+```java
 package chapter_2_learning;
 
 import java.util.Scanner; \\importing the Scanner class
