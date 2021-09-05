@@ -32,7 +32,7 @@ public class listing_2_2 {
 		Scanner input = new Scanner(System.in); //defining "input" for further use
 		
 		System.out.println("Type in the radius:"); //prompt
-		double radius=input.nextDouble(); //reading a double type value as the input
+		double radius = input.nextDouble(); //reading a double type value as the input
 		
 		double area = radius*radius*3.14159;
 		
@@ -75,15 +75,29 @@ current time is: 0:24:48 GMT
 ## 2.14
 ### Note 2.14.N3 Increment and Decrement  
 ```java
-i=1;
-a=i++; //a=1,i=2
+i = 1;
+a = i++; //a=1,i=2
 
-i=1;
-b=++i; //b=2,i=2
+i = 1;
+b = ++i; //b=2,i=2
 
-i=1;
-c=i--; //c=1,i=0
+i = 1;
+c = i--; //c=1,i=0
 
-i=1;
-d=--i; //d=0,i=0
+i = 1;
+d = --i; //d=0,i=0
+```
+  
+## 2.15
+### Note 2.15.N4 Casting
+1. Casting does not change the variable being cast.  
+```java
+double a = 4.5;
+int b = (int) a;
+// a = 4.5, b = 4
+```
+2. An argument assignment expression would cast the result to the assigned variable's type.  
+```java
+int sum = 0;
+sum += 4.5; //this is equivalent to sum = (int)(sum + 4.5)
 ```
