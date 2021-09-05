@@ -101,3 +101,10 @@ int b = (int) a;
 int sum = 0;
 sum += 4.5; //this is equivalent to sum = (int)(sum + 4.5)
 ```
+
+### Note 2.15.N5 Two Digits after Decimal Point
+```java
+double a = 344.24345;
+double b = (int)(a * 100) / 100.0; //b = 344.24
+```
+Due to the casting operation "(int)" only affects the first number afterwards- in this case, '(a*100)'- the division operation is done later. Therefore, the data type returns to "double."
