@@ -71,3 +71,19 @@ Output of this program is shown below.
 ```
 current time is: 0:24:48 GMT
 ```
+  
+## 2.14
+### Note 2.14.N3 Increment and Decrement  
+```java
+i=1;
+a=i++; \\a=1,i=2
+
+i=1;
+b=++i; \\b=2,i=2
+
+i=1;
+c=i--; \\c=1,i=0
+
+i=1;
+d=--i; \\d=0,i=0
+```
