@@ -66,4 +66,8 @@ public class listing_2_7 {
 }
 
 ```
-In the program, **"System.currentTimeMillis()"** returns the number of milliseconds since the UNIX epoch (Jan. 1st, 1970).
+In the program, **"System.currentTimeMillis()"** returns the number of milliseconds since the UNIX epoch (Jan. 1st, 1970).  
+Output of this program is shown below.
+```
+current time is: 0:24:48 GMT
+```
