@@ -108,3 +108,24 @@ double a = 344.24345;
 double b = (int)(a * 100) / 100.0; //b = 344.24
 ```
 Due to the casting operation "(int)" only affects the first number afterwards- in this case, '(a*100)'- the division operation is done later. Therefore, the data type returns to "double."
+  
+## 2.16
+### Error 2.18.E1 Round-off Errors
+When trying to find the decimal part of 99.99: 
+```java
+System.out.print((int)((99.99 - 99) * 100));
+```
+The syntax above is correct, but it results in the "wrong" output below:  
+```
+98
+```
+This is because calculations involving floating-point numbers are **approximated** because these numbers are not stored with complete accuracy.  
+### Solution 2.18.S1 Round-off Errors
+To yield a precise result, calculations with integers is needed instead, and the program is modified as below.
+```java
+System.out.print((int)(99.99 * 100 - 99 * 100));
+```
+Which would result in: 
+```
+99
+```
