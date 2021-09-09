@@ -31,3 +31,4 @@ The output is as below.
 ```
 013601267
 ```
+Note that if "%-09d" is used instead, "0" will be added AFTER the parameter, which also suggests that the parameter is left justified.
