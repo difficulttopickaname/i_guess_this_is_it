@@ -16,3 +16,27 @@ Each time a method is invoked, the system creates an **activation record** (also
 When a method calls another method, the caller’s activation record is kept intact, and a new activation record is created for the new method called. When a method finishes its work and returns to its caller, its activation record is removed from the call stack.  
 ![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c6_3_call_stack.png)  
 As shown above, call stacks store the activation records in a *last-in, first-out* fashion.
+  
+## 6.8
+### Note 6.8.N3 Overloading Methods
+If I have three methods as shown below:
+```java
+public static int max(int a, int b){
+...
+}
+
+public static double max(double a, double b){
+...
+}
+
+public static double max(double a, double b, double c){
+...
+}
+```
+Java would automatically determine which method to use when calling "max" method. For example: 
+```java
+m1 = max(1,2);
+m2 = max(1.1, 1.2);
+m3 = max(1.1, 1.2, 1.3);
+```
+"m1", "m2", "m3" calls three different methods. The Java compiler finds the method that best matches a method invocation.
