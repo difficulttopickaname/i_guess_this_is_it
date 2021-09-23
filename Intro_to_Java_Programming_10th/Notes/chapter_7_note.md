@@ -32,7 +32,7 @@ public class test_7_6 {
 		number = 100;
 		array[0] = 100;
 	}
-}
+}  
 ```
 Attempting to change both x,y in the method, the following is the result.  
 ```java
@@ -43,3 +43,17 @@ Attempting to change both x,y in the method, the following is the result.
 ■ For an argument of an array type, the value of the argument is a reference to an array; this reference value is passed to the method. Semantically, it can be best described as pass-by-sharing, that is, the array in the method is the same as the array being passed. Thus, *if you change the array in the method, you will see the change outside the method.*  
   
 Note that elements inside an array are still of primitive type.
+  
+## 7.9
+### Note 7.9.N3 Variable-Length Argument Lists
+Pass a variable number of arguments of the same type to a method with parameters declared as below.  
+```java
+public static void main(String[] args) {
+	printMax(3,5,21,5.4,8,9.2);
+	printMax(new double[] {3.2,6.2,5});
+}
+public static void printMax(double... numbers){
+	...
+}
+```
+Java treats a variable-length parameter as an array.
