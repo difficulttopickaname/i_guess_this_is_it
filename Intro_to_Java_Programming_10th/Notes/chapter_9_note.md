@@ -34,3 +34,6 @@ class Circle{
   ...
 }
 ```
+
+### Note 9.7.N2 Instance and Static Method
+?()[https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c9_8_instance_static.png]
