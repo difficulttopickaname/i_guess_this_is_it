@@ -35,7 +35,7 @@ class Circle{
 }
 ```
   
-### Note 9.7.N2 Instance and Static Method
+### Note 9.7.N3 Instance and Static Method
 ![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c9_8_instance_static.png)
 For example, the following is wrong.
 ```java
@@ -45,3 +45,9 @@ public static void main(String[] args) {
 }
 ```
 The static method can't access an instance data field.
+
+
+## 9.8
+### Note 9.8.N4 Visible Modifiers
+![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c9_8_visible_modifiers.png)
+Note that if a "class" is not defined as "public", it can be accessed only within the same package.
