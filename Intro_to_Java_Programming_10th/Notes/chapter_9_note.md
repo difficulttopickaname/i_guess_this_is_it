@@ -48,6 +48,7 @@ The static method can't access an instance data field.
 
 
 ## 9.8
-### Note 9.8.N4 Visible Modifiers
+### Note 9.8.N4 Visible Modifiers  
+C1 and C2 are in the same package, while C3 in another one.
 ![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c9_8_visible_modifiers.png)
 Note that if a "class" is not defined as "public", it can be accessed only within the same package.
