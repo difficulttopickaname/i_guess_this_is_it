@@ -58,7 +58,15 @@ Note that if a "class" is not defined as "public", it can be accessed only withi
 
 ## 9.12
 ### Note 9.12.N5 Immutable Objects and Classes
-For a class to be immutable, the following rules must be met:  
+#### For a class to be immutable, the following rules must be met:  
 ■ *All data fields must be private.*  
 ■ *There can’t be any mutator methods for data fields.*  
 ■ *No accessor methods can return a reference to a data field that is mutable.*  
+  
+A counter example of rule 3:
+```java
+public java.util.Date getDateCreated() {
+	return dateCreated;
+}
+```
+It is clear that the accessor method "getDateCreated" returns a reference to "Date" object, therefore the content of "dateCreated" can be changed.  
