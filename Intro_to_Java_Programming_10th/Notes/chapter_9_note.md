@@ -55,3 +55,10 @@ Note that if a "class" is not defined as "public", it can be accessed only withi
 **Causion**:  
 1. The private modifier applies only to the members of a class. The public modifier can apply to a class or members of a class.  
 2. Using the modifiers public and private on local variables would cause a compile error.
+
+## 9.12
+### Note 9.12.N5 Immutable Objects and Classes
+For a class to be immutable, the following rules must be met:  
+■ *All data fields must be private.*  
+■ *There can’t be any mutator methods for data fields.*  
+■ *No accessor methods can return a reference to a data field that is mutable.*  
