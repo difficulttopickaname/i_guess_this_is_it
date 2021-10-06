@@ -70,3 +70,33 @@ public java.util.Date getDateCreated() {
 }
 ```
 It is clear that the accessor method "getDateCreated" returns a reference to "Date" object, therefore the content of "dateCreated" can be changed.  
+  
+  
+## 9.14
+### Note 9.14.N6 "this"
+The **"this"** keyword is the name of a reference that an object can use to refer to itself.  
+```java
+class Circle{
+	private double radius = 1;
+	...
+	double getArea() {
+		return Math.PI * this.radius * this.radius;
+	}
+}
+```
+Furthermore, the keyword "this" can be applied to constructors.  
+```java
+class Circle{
+	private double radius;
+	
+	Circle(){
+		this(1.0);
+	}
+	
+	Circle(double newRadius){
+		radius = (newRadius >= 0) ? newRadius : 0;
+	}
+	...
+}
+```
+Note: Java requires that the "this(arg-list)" statement appear **first** in the constructor before any other executable statements.  
