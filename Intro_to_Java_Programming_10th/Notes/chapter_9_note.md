@@ -116,7 +116,7 @@ public class Location{
 ...
 }
 ```
-When trying to define a class as above, an error occurs.
+When trying to define a class as above, an error occurs.  
 ``
 The public type Location must be defined in its own file.
 ``
