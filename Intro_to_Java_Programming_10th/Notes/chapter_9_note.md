@@ -100,3 +100,39 @@ class Circle{
 }
 ```
 Note: Java requires that the "this(arg-list)" statement appear **first** in the constructor before any other executable statements.  
+  
+  
+## Practice
+### Error 9.E1
+```java
+public class practice_9_13 {
+	public static void main(String[] args) {
+	...
+	}
+...
+}
+
+public class Location{
+...
+}
+```
+When trying to define a class as above, an error occurs.
+``
+The public type Location must be defined in its own file.
+``
+
+### Solution 9.S1
+The error occurs due to **multiple public class occurs**.  
+```java
+public class practice_9_13 {
+	public static void main(String[] args) {
+	...
+	}
+...
+}
+
+class Location{
+...
+}
+```
+Only one public class with the same name as the file is allowed in one program.
