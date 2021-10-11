@@ -33,3 +33,4 @@ public class CircleFromSimpleGeometricObject extends SimpleGeometricObject {
   ...
 }
 ```
+If a method with the "@Override" annotation does not override its superclass’s method, the compiler will report an error.
