@@ -10,6 +10,26 @@
   
 ■ Inheritance is used to model the is-a relationship. A subclass and its superclass must have the is-a relationship.  
   
-■ Java does not allow multiple inheritance. A Java class may inherit directly from only one superclass. This restriction is known as single inheritance. (multiple inheritance can be
-achieved through interfaces)  
+■ Java does not allow multiple inheritance. A Java class may inherit directly from only one superclass. This restriction is known as single inheritance. (multiple inheritance can be achieved through interfaces)  
   
+## 11.5
+### Note 11.5.N2 Overloading and Overriding
+\*Overloading means to define multiple methods with the same name but **different signatures**.  
+\*Overriding means to provide a **new implementation** for a method in the subclass.
+  
+■ Overridden methods are in different classes related by inheritance; overloaded methods can be either in the same class or different classes related by inheritance.  
+  
+■ Overridden methods have the same signature and return type; overloaded methods have the same name but a different parameter list.  
+  
+Use the notation "@Override" before the method in a subclass to avoid mistakes.  
+```java
+public class CircleFromSimpleGeometricObject extends SimpleGeometricObject {
+  ...
+  
+	@Override
+	public String toString() {
+		return super.toString() + "\nradius is " + radius;
+	}
+  ...
+}
+```
