@@ -51,3 +51,48 @@ Note that the "display" method takes in a "SimpleGeometricObject" type, where it
   
 *The three pillars of object-oriented programming are encapsulation, inheritance, and polymorphism.*
 
+## 11.8
+### Note 11.7.N4 Method Matcing & Dynamic Binding
+In an expression "Person p = new Student();", "Person" is the **declared type** of p, while "Student" is the **actual type** of p.  
+```java
+public class match_and_bind {
+	public static void main(String[] args) throws Exception {
+        Person p = new Student();
+        Student s = new Student();
+        
+        p.m(0);     // Prints "Person method"
+        p.m(0.0);   // Prints "Person method"
+        
+        s.m(0);     // Prints "Student method"
+        s.m(0.0);   // Prints "Person method"
+        
+        System.out.println(p.toString());	// Prints "Student"
+        System.out.println(s.toString());	// Prints "Student"
+    }
+}
+
+
+class Person {
+    public void m(double n) {
+        System.out.println("Person method");
+    }
+    
+    public String toString() {
+    	return "Person";
+    }
+}
+
+class Student extends Person {
+    public void m(int n) {
+        System.out.println("Student method");
+    }
+    
+    public String toString() {
+    	return "Student";
+    }
+}
+```
+The "m" methods tests the way JVM matches methods, while the "toString" methods tests how it binds methods.  
+  
+■ The **declared type** of the reference variable decides which method to **match** at compiletime.  
+■ The JVM dynamically **binds** the implementation of the method at runtime, decided by the **actual type** of the variable.  
