@@ -96,3 +96,21 @@ The "m" methods tests the way JVM matches methods, while the "toString" methods 
   
 ■ The **declared type** of the reference variable decides which method to **match** at compiletime.  
 ■ The JVM dynamically **binds** the implementation of the method at runtime, decided by the **actual type** of the variable.  
+  
+## 11.9
+### Note 11.9.N5 Explicit Casting and "instanceof"
+It is always possible to cast an instance of a subclass to a variable of a superclass (known as upcasting), because an instance of a subclass is always an instance of its superclass.  
+```java
+Object o = new Student();
+```
+When casting an instance of a superclass to a variable of its subclass (known as downcasting), explicitcasting must be used to confirm your intention to the compiler with the (SubclassName) cast notation.  
+```java
+Student b = (Student) o;
+```
+  
+To make sure that "o" (the superclass) is an instance of "Student" (the subclass), use "**instanceof**" operator.
+```java
+if(p instanceof Student) {
+        Student l = (Student)p;
+}
+```
