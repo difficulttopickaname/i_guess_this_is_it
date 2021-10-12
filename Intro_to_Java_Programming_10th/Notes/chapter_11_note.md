@@ -114,3 +114,7 @@ if(p instanceof Student) {
         Student l = (Student)p;
 }
 ```
+  
+## 11.14
+### Note 11.14.N6 Data and Methods Visibility
+![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c11_14_visibility.png)  
