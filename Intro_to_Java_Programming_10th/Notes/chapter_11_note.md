@@ -94,7 +94,7 @@ class Student extends Person {
 ```
 The "m" methods tests the way JVM matches methods, while the "toString" methods tests how it binds methods.  
   
-■ The **declared type** of the reference variable decides which method to **match** at compiletime.  
+■ The **declared type** of the reference variable decides which method to **match** at compiletime. It goes backwards the inheritance chain.  
 ■ The JVM dynamically **binds** the implementation of the method at runtime, decided by the **actual type** of the variable.  
   
 ## 11.9
