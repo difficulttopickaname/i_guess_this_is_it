@@ -34,3 +34,20 @@ public class CircleFromSimpleGeometricObject extends SimpleGeometricObject {
 }
 ```
 If a method with the "@Override" annotation does not override its superclass’s method, the compiler will report an error.
+  
+## 11.7
+### Note 11.7.N3 Polymorphism
+In simple term, polymorphism means that a variable of a supertype can refer to a subtype object.  
+```java
+public static void main(String[] args) {
+	display(new RectangleFromSimpleGeometricObject(1, 1, "black", true));
+}
+
+public static void display(SimpleGeometricObject object) {
+	System.out.println("Created on " + object.getDateCreated() + ". Color is " + object.getColor());
+}
+```
+Note that the "display" method takes in a "SimpleGeometricObject" type, where its **subclass** "RectangleFromSimpleGeometricObject" can also be used.  
+  
+*The three pillars of object-oriented programming are encapsulation, inheritance, and polymorphism.*
+
