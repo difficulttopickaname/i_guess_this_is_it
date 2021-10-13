@@ -9,7 +9,7 @@ public static int quotient(int number1, int number2) {
 	}
 		
 public static void main(String[] args) {
-    try {
+		try {
 			...
 		}
 		catch (ArithmeticException ex) {
