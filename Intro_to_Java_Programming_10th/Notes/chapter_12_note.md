@@ -27,8 +27,7 @@ do {
 	try {
 		int number1 = input.nextInt();
 		int number2 = input.nextInt();
-		int result = quotient(number1, number2);
-		System.out.println(number1 + " / " + number2 + " is "+ result);
+		...
 	}
 	catch (ArithmeticException ex) {
 		System.out.println("Exception: an integer " +"cannot be divided by zero ");
