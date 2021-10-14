@@ -98,14 +98,14 @@ public class listing_12_15 {
   
 #### About how the Scanner class works
 The next(), nextLine()... methods are known as token-reading methods, because they read tokens separated by delimiters.  
-\* A token-reading method first *skips any delimiters* (whitespace characters by default), then *reads a token ending at a delimiter*.
-\* The next() method reads a string delimited by delimiters, and nextLine() reads a line ending with a line separator.
+\* A token-reading method first *skips any delimiters* (whitespace characters by default), then *reads a token ending at a delimiter*.  
+\* The next() method reads a string delimited by delimiters, and nextLine() reads a line ending with a line separator.  
 
 ```java
 Scanner input = new Scanner(System.in);
 int intValue = input.nextInt();
 String line = input.nextLine();
 ```
-Suppose I enter 34, press the *Enter key*, then enter 567 and press the *Enter key*, the value for "intValue" would be 34 and the value for "line" would be empty.
+Suppose I enter 34, press the *Enter key*, then enter 567 and press the *Enter key*, the value for "intValue" would be 34 and the value for "line" would be empty.  
 
 *Reason: The nextLine() method ends after reading the line separator and returns the string read before the line separator. Since there are no characters before the line separator, line is empty.*
