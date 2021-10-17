@@ -41,7 +41,8 @@ Note that without defining **abstract methods** in the superclass "GeometricObje
   If a subclass of an abstract superclass does not implement all the abstract methods, the subclass must be defined as abstract.  
   
 ■ An abstract class cannot be instantiated using the new operator, but you can still define its constructors, which are invoked in the constructors of its subclasses.  
-  For instance, the constructors of GeometricObject are invoked in the Circle class and the Rectangle class.
+  For instance, the constructors of GeometricObject are invoked in the Circle class and the Rectangle class.  
+  
 ■ A class that contains abstract methods must be abstract.  
   However, it is possible to define an abstract class that doesn’t contain any abstract methods. In this case, you cannot create instances of the class using the new operator. This class is used as a base class for defining subclasses.  
   
