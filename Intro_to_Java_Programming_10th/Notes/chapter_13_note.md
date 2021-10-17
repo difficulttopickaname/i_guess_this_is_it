@@ -36,6 +36,7 @@ The JVM dynamically determines which of these methods to invoke at runtime, depe
 Note that without defining **abstract methods** in the superclass "GeometricObjects", such comparison cannot be realized.  
   
   
+#### Points about Abstract Class  
 ■ An abstract method cannot be contained in a nonabstract class.  
   If a subclass of an abstract superclass does not implement all the abstract methods, the subclass must be defined as abstract.  
   
@@ -54,8 +55,8 @@ For example, the "Object" class is concrete, but its subclasses, such as "Geomet
   Therefore, the following statement, which creates an array whose elements are of the GeometricObject type, is correct.  
 ``
 GeometricObject[] objects = new GeometricObject[10];
-``
-  You can then create an instance of GeometricObject and assign its reference to the array like this:  
+``  
+You can then create an instance of GeometricObject and assign its reference to the array like this:  
 ``
 objects[0] = new Circle();
 ``
