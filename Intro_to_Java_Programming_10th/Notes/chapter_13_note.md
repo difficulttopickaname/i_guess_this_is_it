@@ -60,4 +60,37 @@ GeometricObject[] objects = new GeometricObject[10];
 You can then create an instance of GeometricObject and assign its reference to the array like this:  
 ``
 objects[0] = new Circle();
-``
+``  
+  
+## 13.4
+### Note 13.4.N2 GregorianCalendar and Calendar
+#### Field Constants in the Calendar Class
+![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c13_4_calendar.png)  
+  
+#### About the two classes
+![](https://github.com/difficulttopickaname/i_guess_this_is_it/blob/java_beginner/Intro_to_Java_Programming_10th/Pictures/jl_c13_4_gregorian_calendar.png)  
+
+#### Defining a GregorianCalendar
+```java
+import java.util.*;
+
+public class listing_13_6 {
+	public static void main(String[] args) {
+		Calendar calendar = new GregorianCalendar();
+		System.out.println("Current time is " + new Date());
+		System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
+		System.out.println("AM_PM: " + calendar.get(Calendar.AM_PM));
+		
+		Calendar calendar1 = new GregorianCalendar(2002, 12, 31);
+		String[] dayNameOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+		System.out.println("December 31, 2002 is a " + dayNameOfWeek[calendar1.get(Calendar.DAY_OF_WEEK) - 1]);
+	}
+}
+```
+Note that "Calendar" cannot be used to directly create an instance, therefore the "CregorianCalendar" subclass is needed. The following is the output.  
+```java
+Current time is Sun Oct 17 11:29:30 CST 2021
+YEAR: 2021
+AM_PM: 0
+December 31, 2002 is a Friday
+```
