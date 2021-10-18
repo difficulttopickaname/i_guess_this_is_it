@@ -118,3 +118,43 @@ class Apple extends Fruit implements Edible{
 	}
 }
 ```
+  
+## 13.6
+### Note 13.6.N4
+1. "Comparable" is an interface which defines the "**compareTo**" method for comparing objects.  
+2. The "**java.util.Arrays.sort**" uses the "compareTo" method to compare and sorts the objects in an array.  
+  
+Therefore, it's possible to write a "compareTo" method inside a class to use the "java.util.Arrays.sort".  
+```java
+public class ComparableRectangle extends RectangleFromSimpleGeometricObject implements Comparable<ComparableRectangle>{
+	...
+	@Override
+	public int compareTo(ComparableRectangle o) {
+		if(this.getArea() > o.getArea()) 
+			return 1;
+		else if (this.getArea() < o.getArea())
+			return -1;
+		else return 0;
+	}
+	...
+}
+```
+The program above let java.util.Arrays.sort compare each object with their area.  
+  
+## 13.7
+### Note 13.7.N5 Cloneable
+Override the "clone()" method to make instances of the class cloneable.  
+```java
+public class House implements Cloneable, Comparable<House>{
+	...
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		// Perform a shallow copy
+		House houseClone = (House)super.clone();  // at this point, houseClone.whenBuilt == this.whenBuilt is true, although houseClone == this is false
+		// Deep copy on whenBuilt
+		houseClone.whenBuilt = (java.util.Date)(whenBuilt.clone());  // at this point, houseClone.whenBuilt == this.whenBuilt is false
+		return houseClone;
+	}
+}
+```
+Note that when performing a shallow clone, inferences in the original copy is not changed. Performing a specific deep clone as above changes the inference into a new copy.  
