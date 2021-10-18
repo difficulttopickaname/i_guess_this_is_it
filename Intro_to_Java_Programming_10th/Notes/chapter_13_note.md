@@ -94,3 +94,27 @@ YEAR: 2021
 AM_PM: 0
 December 31, 2002 is a Friday
 ```
+  
+## 13.5
+### Note 13.5.N3 Interface
+An interface is a class-like construct that contains only constants and abstract methods.
+```java
+public interface Edible {
+	public abstract String howToEat();
+}
+```
+Above, an interface "Edible" is created. To specify a class with it, use the keyword "**implements**".
+```java
+abstract class Fruit implements Edible{
+	@Override
+	public abstract String howToEat();
+}
+
+class Apple extends Fruit implements Edible{
+	...
+	@Override
+	public String howToEat() {
+		return "peal and eat";
+	}
+}
+```
