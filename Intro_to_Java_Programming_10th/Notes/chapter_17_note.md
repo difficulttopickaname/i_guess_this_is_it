@@ -1,7 +1,7 @@
 # Chapter 17
 ## 17.4
 ### Note 17.4.N1 FileInputStream and FileOutputStream
-Normally, instances of "FIleInputStream" and "FileOutputStream" are created (and used) as following.  
+Normally, instances of "FileInputStream" and "FileOutputStream" are created (and used) as following.  
 ```java
 FileOutputStream output = new FileOutputStream("listing_17_1.dat");
 for (int i = 1; i <= 10; i++)
