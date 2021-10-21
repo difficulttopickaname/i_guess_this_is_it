@@ -19,3 +19,23 @@ input.close();
 ```java
 new PrintWriter(new FileOutputStream("temp.txt", true));  //"true" make output appended to the original text
 ```
+  
+### Note 17.4.N2 DataInputStream and DataOutputStream
+DataInputStream reads bytes from the stream and converts them into appropriate primitive-type values or strings.  
+DataOutputStream converts primitive-type values or strings into bytes and outputs the bytes to the stream.  
+```java
+DataOutputStream output = new DataOutputStream(new FileOutputStream("listing_17_2.dat"));
+output.writeUTF("John");
+output.writeDouble(85.5);
+output.writeUTF("Jim");
+output.writeDouble(185.5);
+output.writeUTF("George");
+output.writeDouble(105.25);
+output.close();
+	
+DataInputStream input = new DataInputStream(new FileInputStream("listing_17_2.dat"));
+System.out.println(input.readUTF() + " " + input.readDouble());
+System.out.println(input.readUTF() + " " + input.readDouble());
+System.out.println(input.readUTF() + " " + input.readDouble());
+input.close();
+```
