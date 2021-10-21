@@ -5,13 +5,13 @@ Normally, instances of "FIleInputStream" and "FileOutputStream" are created (and
 ```java
 FileOutputStream output = new FileOutputStream("listing_17_1.dat");
 for (int i = 1; i <= 10; i++)
-		output.write(i);
+	output.write(i);
 output.close();
 		
 FileInputStream input = new FileInputStream("listing_17_1.dat");
 int value;
 while((value = input.read()) != -1)
-		System.out.print(value + " ");
+	System.out.print(value + " ");
 input.close();
 ```
   
